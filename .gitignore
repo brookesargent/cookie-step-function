@@ -1,0 +1,86 @@
+# Serverless directories
+.serverless
+
+# golang output binary directory
+bin
+
+# Build outputs shouldn't be checked into source
+build
+
+# golang vendor (dependencies) directory
+vendor
+
+certs/*
+!certs/.gitkeep
+jwt/*
+!jwt/.gitkeep
+*-packr.go
+
+# Terraform specific
+.terraform
+*.tfstate
+*.tfstate*
+*.retry
+*.plan
+plan
+*.auto.tfvars
+.vagrant
+
+# Goland files
+.idea/
+*.iml
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Ignore scratch directory of tools
+tools/scratch
+
+# ignore terraform log and generated files
+tf.log
+payload.sql
+
+# Ignore the individual thing certs
+*.pem
+
+# Ignore all instances of node modules. ALL of them.
+node_modules/
+**/node_modules
+
+examples/vue-starter-kit/node_modules
+
+# Ignore /dist build folder in vue starter
+examples/vue-starter-kit/dist
+web/developer-dashboard/dist
+
+#Ignore generated cypress files
+web/developer-dashboard/tests/e2e/videos
+web/developer-dashboard/tests/e2e/screenshots
+
+#Ignore .env
+web/developer-dashboard/.env.local
